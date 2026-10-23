@@ -1592,16 +1592,15 @@ openssl s_client -connect ldap.example.com:636 -CAfile /etc/ssl/certs/ca.crt
 
 Ce document a été rédigé pour fournir une référence complète, pratique et avancée sur les protocoles **LDAP** et **LDAPS**. Il s'adresse aux administrateurs système, aux ingénieurs sécurité, aux développeurs et à toute personne souhaitant maîtriser les annuaires LDAP.
 
-**Style** : CMatrix Green Animated — Cyber-Tchad Terminal Edition
+  Cyber-Tchad 
 
-**Licence** : Ce README est fourni à titre éducatif. Vous êtes libre de l'utiliser, le modifier et le partager en citant l'auteur `hackers_tchad`.
+**Licence** : Ce README est fourni à titre éducatif. Vous êtes libre de l'utiliser, le modifier et le partager en citant l'auteur `
+
+
+hackers_tchad
 
 ```
-╔════════════════════════════════════════════════════════════════════════════╗
-║  Merci d'avoir lu ce guide LDAP / LDAPS !                                  ║
-║  N'oubliez pas : un annuaire bien conçu est la clé d'une IAM réussie.      ║
-║  hackers_tchad — CMatrix Green Animated                                    ║
-╚════════════════════════════════════════════════════════════════════════════╝
+  Merci d'avoir lu ce guide LDAP / LDAPS !                                  
 ```
 
 ---
