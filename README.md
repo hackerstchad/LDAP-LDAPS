@@ -71,6 +71,7 @@ LDAP est défini par une série de RFCs (Request for Comments) publiées par l'I
 
 ## 2.2 Caractéristiques principales
 
+
 - **Léger** : moins complexe que DAP (Directory Access Protocol) utilisé avec X.500.
 - **Basé sur TCP/IP** : contrairement à X.500 qui utilise OSI.
 - **Orienté lecture** : optimisé pour un grand nombre de recherches rapides.
