@@ -1,34 +1,9 @@
-<!--
-  ╔════════════════════════════════════════════════════════════════════════════╗
-  ║                                                                            ║
-  ║   README_LDAP.md — LDAP / LDAPS — Protocoles d'annuaire avancés            ║
-  ║   Auteur : hackers_tchad                                                   ║
-  ║   Style  : CMatrix Green Animated / Cyber-Tchad Terminal                   ║
-  ║                                                                            ║
-  ╚════════════════════════════════════════════════════════════════════════════╝
--->
+LDAP/LDAPS
 
-<div align="center">
+<img width="1024" height="683" alt="f7dfe1f6-c506-4c79-8670-32b5625454f7" src="https://github.com/user-attachments/assets/f492b739-68ce-45fa-af3e-e719fbffcafa" />
 
-<pre style="color:#00ff00; background:#000000;">
-██╗      ██████╗  █████╗ ██████╗     ██╗     ██████╗  █████╗ ██████╗ ███████╗
-██║     ██╔═══██╗██╔══██╗██╔══██╗    ██║     ██╔══██╗██╔══██╗██╔══██╗██╔════╝
-██║     ██║   ██║███████║██║  ██║    ██║     ██║  ██║███████║██████╔╝███████╗
-██║     ██║   ██║██╔══██║██║  ██║    ██║     ██║  ██║██╔══██║██╔══██╗╚════██║
-███████╗╚██████╔╝██║  ██║██████╔╝    ███████╗██████╔╝██║  ██║██║  ██║███████║
-╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝     ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 
-[L]ightweight [D]irectory [A]ccess [P]rotocol  —  Annuaire & Identité
-[LDAPS] LDAP over SSL/TLS — Annuaire sécurisé
-
-🟢 CMatrix Green Animated 🟢  //  hackers_tchad  //  Cyber-Tchad Edition
-</pre>
-
-</div>
-
----
-
-# 📜 Table des matières
+#  Table des matières
 
 1. [Introduction](#1-introduction)
 2. [Qu'est-ce que LDAP ?](#2-quest-ce-que-ldap-)
@@ -231,7 +206,7 @@ L'architecture LDAP repose sur le modèle **client-serveur**. Le serveur d'annua
 ┌─────────────────────────────────────────────────────────────────┐
 │                        RÉSEAU TCP/IP                            │
 │                                                                 │
-│   ┌──────────────┐         LDAP (389) / LDAPS (636)         ┌──────────────┐
+│   ┌──────────────┐         LDAP (389) / LDAPS (636)          ┌──────────────┐
 │   │   Client     │ ◄───────────────────────────────────────► │   Serveur    │
 │   │  (ldapsearch)│                                           │   slapd / AD │
 │   └──────────────┘                                           └──────────────┘
@@ -239,7 +214,7 @@ L'architecture LDAP repose sur le modèle **client-serveur**. Le serveur d'annua
 │          │                                                           │
 │   ┌──────────────┐                                           ┌──────────────┐
 │   │ Application  │ ◄───────────────────────────────────────► │   Backend    │
-│   │  (Web, VPN,  │         Authentification / Annuaire        │  (BDB, MDB,  │
+│   │  (Web, VPN,  │         Authentification / Annuaire       │ (BDB, MDB,   │
 │   │   Mail, etc.)│                                           │   SQL, etc.) │
 │   └──────────────┘                                           └──────────────┘
 └─────────────────────────────────────────────────────────────────┘
@@ -327,17 +302,17 @@ Active Directory utilise LDAP comme protocole d'accès, mais ajoute des concepts
 ┌──────────────────────────────────────────────────────────────┐
 │                    FORÊT ACTIVE DIRECTORY                    │
 │                                                              │
-│   ┌─────────────────┐        ┌─────────────────┐            │
-│   │   Domaine A     │◄──────►│   Domaine B     │            │
-│   │  (dc=domaineA,  │ Trust  │  (dc=domaineB,  │            │
-│   │   dc=local)     │        │   dc=local)     │            │
-│   └────────┬────────┘        └────────┬────────┘            │
+│   ┌─────────────────┐        ┌─────────────────┐             │
+│   │   Domaine A     │◄──────►│   Domaine B     │             │
+│   │  (dc=domaineA,  │ Trust  │  (dc=domaineB,  │             │
+│   │   dc=local)     │        │   dc=local)     │             │
+│   └────────┬────────┘        └────────┬────────┘             │
 │            │                          │                      │
-│   ┌────────▼────────┐        ┌────────▼────────┐            │
-│   │  Contrôleur     │        │  Contrôleur     │            │
-│   │  de domaine 1   │◄──────►│  de domaine 2   │            │
-│   │  LDAP/LDAPS/Kerberos      LDAP/LDAPS/Kerberos           │
-│   └─────────────────┘        └─────────────────┘            │
+│   ┌────────▼────────┐        ┌────────▼────────┐             │
+│   │  Contrôleur     │        │  Contrôleur     │             │
+│   │  de domaine 1   │◄──────►│  de domaine 2   │             │
+│   │LDAP/LDAPS/Kerberos       LDAP/LDAPS/Kerberos             │
+│   └─────────────────┘        └─────────────────┘             │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -1909,12 +1884,6 @@ Ce guide a couvert :
 N'hésitez pas à approfondir chaque section en consultant les RFCs et documentations officielles. Continuez à apprendre, à expérimenter en labo et à sécuriser vos annuaires.
 
 ```
-╔════════════════════════════════════════════════════════════════════════════╗
-║                                                                            ║
-║   FIN DU README_LDAP.md                                                    ║
-║   Auteur : hackers_tchad                                                   ║
-║   Style  : CMatrix Green Animated — Cyber-Tchad Terminal                   ║
-║   Sujet  : LDAP / LDAPS — Protocoles d'annuaire avancés                    ║
-║                                                                            ║
-╚════════════════════════════════════════════════════════════════════════════╝
+Auteur hackers_tchad
+
 ```
