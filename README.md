@@ -1594,7 +1594,7 @@ Ce document a été rédigé pour fournir une référence complète, pratique et
 
   Cyber-Tchad 
 
-**Licence** : Ce README est fourni à titre éducatif. Vous êtes libre de l'utiliser, le modifier et le partager en citant l'auteur `
+**Licence** : Ce GUIDE est fourni à titre éducatif. Vous êtes libre de l'utiliser, le modifier et le partager en citant l'auteur `
 
 
 hackers_tchad
